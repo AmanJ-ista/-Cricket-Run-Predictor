@@ -52,5 +52,34 @@ e3.place(x=1000,y=360)
 
 
 
+l5=Label(bottom_frame,text="PREDICTED SCORE",bg="light blue",font=('calibre',30,'bold'))
+l5.place(x=400,y=450)
+
+l6=Label(bottom_frame,text="Enter Over",bg="light blue",font=('calibre',25,'bold'))
+l6.place(x=500,y=550)
+
+e4=Entry(bottom_frame,textvar='entry4',width=20,font=('Helvetica',20,'bold'))
+e4.place(x=900,y=550)
+
+l7=Label(bottom_frame,text="Enter  Ball",bg="light blue",font=('calibre',25,'bold'))
+l7.place(x=500,y=630)
+
+e5=Entry(bottom_frame,textvar='entry5',width=20,font=('Helvetica',20,'bold'))
+e5.place(x=900,y=630)
+
+def score():
+     messagebox.showinfo("Information","Your Score is ") 
+
+b1=Button(bottom_frame,text="Get Score",bg="orange",font=('calibre',20,'bold'),bd=20,command=score)
+b1.place(x=700,y=700)
+
+window.mainloop()
+
+
+
+
+
+
+
 
 
